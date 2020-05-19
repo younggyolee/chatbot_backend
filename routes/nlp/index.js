@@ -32,7 +32,26 @@ manager.addDocument('en', 'e-mail', 'questions.email');
 manager.addDocument('en', 'mail', 'questions.email');
 manager.addAnswer('en', 'questions.email', 'My inbox is always open! Don\'t hesitate to reach out to me at mailto:younglee.work@gmail.com, and I will make sure to respond.');
 
-manager.addAnswer('en', 'None', 'Sorry, but I don\'t understand');
+manager.addDocument('en', 'How do I pronounce your first name?', 'questions.pronunciation');
+manager.addAnswer('en', 'questions.pronunciation', 'This will be added soon, thanks for your patience.');
+
+manager.addDocument('en', 'Projects?', 'questions.projects');
+manager.addAnswer('en', 'questions.projects', 'Get It Done Timer (iOS App) : https://apps.apple.com/app/get-it-done-timer-focus/id1508493617?ls=1');
+manager.addAnswer('en', 'questions.projects', 'Sparkling Joys : https://www.sparklingjoys.com');
+manager.addAnswer('en', 'questions.projects', 'This is also my project - You are also chatting with a bot, not the real Younggyo. He is too busy now...');
+
+manager.addDocument('en', 'Work Experiences', 'questions.works');
+manager.addAnswer('en', 'questions.works', 'I worked at Farfetch as a performance marketing executive.');
+manager.addAnswer('en', 'questions.works', 'I also have a work experience in the mobile gaming industry as a game designer at Playdog Soft, a 2015 Facebook Games Of The Year winner.');
+manager.addAnswer('en', 'questions.works', 'I am currently working as a freelancer data engineer.');
+
+manager.addDocument('en', 'Facebook', 'questions.facebook');
+manager.addAnswer('en', 'questions.facebook', 'Meet me at Facebook https://facebook.com/younggyolee.fb');
+
+manager.addDocument('en', 'Instagram', 'questions.instagram');
+manager.addAnswer('en', 'questions.instagram', 'Meet me at Instagram https://instagram.com/younggyo.lee');
+
+manager.addAnswer('en', 'None', 'Sorry, but I don\'t understand. Younggyo has not taught me enough. Can you tell him to spend more time with me?');
 
 (async() => {
   await manager.train();

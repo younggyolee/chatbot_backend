@@ -11,6 +11,11 @@ function getChoices(classification) {
         'Github',
         'Resume',
       ];
+    case 'questions.linkedin':
+      return [
+        'Facebook',
+        'Instagram'
+      ];
     default:
       return [
         'How do I pronounce your name?',
