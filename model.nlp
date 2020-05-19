@@ -1,0 +1,735 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ]
+  },
+  "nluManager": {
+    "settings": {},
+    "languages": [
+      "en"
+    ],
+    "intentDomains": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "language": "en",
+          "useNoneFeature": true,
+          "config": {
+            "activation": "leaky-relu",
+            "hiddenLayers": [],
+            "iterations": 20000,
+            "learningRate": 0.7,
+            "errorThresh": 0.00005,
+            "momentum": 0.5,
+            "deltaErrorThresh": 0.000001,
+            "maxDecimals": 9,
+            "leakyReluAlpha": 0.08,
+            "timeout": 120000
+          }
+        },
+        "language": "en",
+        "nluClassName": "BrainNLU",
+        "useMasterDomain": true,
+        "trainByDomain": false,
+        "keepStopwords": true,
+        "stemDict": {
+          "for,goodby,now": {
+            "domain": "default",
+            "intent": "greetings.bye"
+          },
+          "bye,bye,care,take": {
+            "domain": "default",
+            "intent": "greetings.bye"
+          },
+          "later,okay,see,you": {
+            "domain": "default",
+            "intent": "greetings.bye"
+          },
+          "bye,for,now": {
+            "domain": "default",
+            "intent": "greetings.bye"
+          },
+          "go,i,must": {
+            "domain": "default",
+            "intent": "greetings.bye"
+          },
+          "hello": {
+            "domain": "default",
+            "intent": "greetings.hello"
+          },
+          "hi": {
+            "domain": "default",
+            "intent": "greetings.hello"
+          },
+          "howdi": {
+            "domain": "default",
+            "intent": "greetings.hello"
+          },
+          "is,name,what,your": {
+            "domain": "default",
+            "intent": "questions.name"
+          },
+          "resum": {
+            "domain": "default",
+            "intent": "questions.resume"
+          },
+          "linkedin": {
+            "domain": "default",
+            "intent": "questions.linkedin"
+          },
+          "github": {
+            "domain": "default",
+            "intent": "questions.github"
+          },
+          "email": {
+            "domain": "default",
+            "intent": "questions.email"
+          },
+          "e,mail": {
+            "domain": "default",
+            "intent": "questions.email"
+          },
+          "mail": {
+            "domain": "default",
+            "intent": "questions.email"
+          }
+        },
+        "intentDict": {
+          "greetings.bye": "default",
+          "greetings.hello": "default",
+          "questions.name": "default",
+          "questions.resume": "default",
+          "questions.linkedin": "default",
+          "questions.github": "default",
+          "questions.email": "default"
+        },
+        "useStemDict": true,
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "language": "en",
+              "useNoneFeature": true,
+              "config": {
+                "activation": "leaky-relu",
+                "hiddenLayers": [],
+                "iterations": 20000,
+                "learningRate": 0.7,
+                "errorThresh": 0.00005,
+                "momentum": 0.5,
+                "deltaErrorThresh": 0.000001,
+                "maxDecimals": 9,
+                "leakyReluAlpha": 0.08,
+                "timeout": 120000
+              }
+            },
+            "language": "en",
+            "keepStopwords": true,
+            "docs": [
+              {
+                "intent": "greetings.bye",
+                "tokens": [
+                  "goodby",
+                  "for",
+                  "now"
+                ]
+              },
+              {
+                "intent": "greetings.bye",
+                "tokens": [
+                  "bye",
+                  "bye",
+                  "take",
+                  "care"
+                ]
+              },
+              {
+                "intent": "greetings.bye",
+                "tokens": [
+                  "okay",
+                  "see",
+                  "you",
+                  "later"
+                ]
+              },
+              {
+                "intent": "greetings.bye",
+                "tokens": [
+                  "bye",
+                  "for",
+                  "now"
+                ]
+              },
+              {
+                "intent": "greetings.bye",
+                "tokens": [
+                  "i",
+                  "must",
+                  "go"
+                ]
+              },
+              {
+                "intent": "greetings.hello",
+                "tokens": [
+                  "hello"
+                ]
+              },
+              {
+                "intent": "greetings.hello",
+                "tokens": [
+                  "hi"
+                ]
+              },
+              {
+                "intent": "greetings.hello",
+                "tokens": [
+                  "howdi"
+                ]
+              },
+              {
+                "intent": "questions.name",
+                "tokens": [
+                  "what",
+                  "is",
+                  "your",
+                  "name"
+                ]
+              },
+              {
+                "intent": "questions.resume",
+                "tokens": [
+                  "resum"
+                ]
+              },
+              {
+                "intent": "questions.linkedin",
+                "tokens": [
+                  "linkedin"
+                ]
+              },
+              {
+                "intent": "questions.github",
+                "tokens": [
+                  "github"
+                ]
+              },
+              {
+                "intent": "questions.email",
+                "tokens": [
+                  "email"
+                ]
+              },
+              {
+                "intent": "questions.email",
+                "tokens": [
+                  "e",
+                  "mail"
+                ]
+              },
+              {
+                "intent": "questions.email",
+                "tokens": [
+                  "mail"
+                ]
+              }
+            ],
+            "features": {
+              "goodby": 1,
+              "for": 2,
+              "now": 2,
+              "bye": 3,
+              "take": 1,
+              "care": 1,
+              "okay": 1,
+              "see": 1,
+              "you": 1,
+              "later": 1,
+              "i": 1,
+              "must": 1,
+              "go": 1,
+              "hello": 1,
+              "hi": 1,
+              "howdi": 1,
+              "what": 1,
+              "is": 1,
+              "your": 1,
+              "name": 1,
+              "resum": 1,
+              "linkedin": 1,
+              "github": 1,
+              "email": 1,
+              "e": 1,
+              "mail": 2
+            },
+            "isEditing": false,
+            "className": "BrainNLU",
+            "classifier": {
+              "className": "BrainClassifier",
+              "settings": {
+                "language": "en",
+                "useNoneFeature": true,
+                "config": {
+                  "activation": "leaky-relu",
+                  "hiddenLayers": [],
+                  "iterations": 20000,
+                  "learningRate": 0.7,
+                  "errorThresh": 0.00005,
+                  "momentum": 0.5,
+                  "deltaErrorThresh": 0.000001,
+                  "maxDecimals": 9,
+                  "leakyReluAlpha": 0.08,
+                  "timeout": 120000
+                }
+              },
+              "labels": [],
+              "network": {
+                "sizes": [
+                  27,
+                  8
+                ],
+                "layers": [
+                  {
+                    "goodby": {},
+                    "for": {},
+                    "now": {},
+                    "bye": {},
+                    "take": {},
+                    "care": {},
+                    "okay": {},
+                    "see": {},
+                    "you": {},
+                    "later": {},
+                    "i": {},
+                    "must": {},
+                    "go": {},
+                    "hello": {},
+                    "hi": {},
+                    "howdi": {},
+                    "what": {},
+                    "is": {},
+                    "your": {},
+                    "name": {},
+                    "resum": {},
+                    "linkedin": {},
+                    "github": {},
+                    "email": {},
+                    "e": {},
+                    "mail": {},
+                    "nonefeature": {}
+                  },
+                  {
+                    "greetings.bye": {
+                      "bias": 1.226747161,
+                      "weights": {
+                        "goodby": 3.696250439,
+                        "for": 3.761538267,
+                        "now": 3.761538267,
+                        "bye": 3.791003466,
+                        "take": 3.725714922,
+                        "care": 3.725714922,
+                        "okay": 2.816987753,
+                        "see": 2.816987753,
+                        "you": 2.816987753,
+                        "later": 2.816987753,
+                        "i": 3.757272243,
+                        "must": 3.757272243,
+                        "go": 3.757272243,
+                        "hello": -1.277441502,
+                        "hi": -1.255581856,
+                        "howdi": -1.239043117,
+                        "what": -0.490215242,
+                        "is": -0.490215242,
+                        "your": -0.490215242,
+                        "name": -0.490215242,
+                        "resum": -1.227998853,
+                        "linkedin": -1.226104856,
+                        "github": -1.223906517,
+                        "email": -1.221352458,
+                        "e": -0.490402967,
+                        "mail": -1.228776336,
+                        "nonefeature": -1.216683745
+                      }
+                    },
+                    "greetings.hello": {
+                      "bias": 2.987814849,
+                      "weights": {
+                        "goodby": -0.85043323,
+                        "for": -1.066161156,
+                        "now": -1.066161156,
+                        "bye": -1.137928247,
+                        "take": -0.922200143,
+                        "care": -0.922200143,
+                        "okay": -0.745928764,
+                        "see": -0.745928764,
+                        "you": -0.745928764,
+                        "later": -0.745928764,
+                        "i": -0.993862748,
+                        "must": -0.993862748,
+                        "go": -0.993862748,
+                        "hello": 9.40942955,
+                        "hi": 9.398813248,
+                        "howdi": 9.367927551,
+                        "what": -0.780564666,
+                        "is": -0.780564666,
+                        "your": -0.780564666,
+                        "name": -0.780564666,
+                        "resum": -2.975419998,
+                        "linkedin": -2.964283705,
+                        "github": -2.952241898,
+                        "email": -2.93914032,
+                        "e": -0.811474681,
+                        "mail": -2.94248724,
+                        "nonefeature": -2.9107306
+                      }
+                    },
+                    "questions.name": {
+                      "bias": 0.223785631,
+                      "weights": {
+                        "goodby": -0.093642049,
+                        "for": -0.136343405,
+                        "now": -0.136343405,
+                        "bye": -0.14386332,
+                        "take": -0.101161964,
+                        "care": -0.101161964,
+                        "okay": -0.090229779,
+                        "see": -0.090229779,
+                        "you": -0.090229779,
+                        "later": -0.090229779,
+                        "i": -0.107587196,
+                        "must": -0.107587196,
+                        "go": -0.107587196,
+                        "hello": -0.225054666,
+                        "hi": -0.223876029,
+                        "howdi": -0.223405197,
+                        "what": 3.06904459,
+                        "is": 3.06904459,
+                        "your": 3.06904459,
+                        "name": 3.06904459,
+                        "resum": -0.259565979,
+                        "linkedin": -0.252602488,
+                        "github": -0.246489123,
+                        "email": -0.240975112,
+                        "e": -0.124424107,
+                        "mail": -0.282230467,
+                        "nonefeature": -0.231946766
+                      }
+                    },
+                    "questions.resume": {
+                      "bias": 0.999753663,
+                      "weights": {
+                        "goodby": -0.28069514,
+                        "for": -0.359364092,
+                        "now": -0.359364092,
+                        "bye": -0.385574371,
+                        "take": -0.306905478,
+                        "care": -0.306905478,
+                        "okay": -0.249874324,
+                        "see": -0.249874324,
+                        "you": -0.249874324,
+                        "later": -0.249874324,
+                        "i": -0.333106607,
+                        "must": -0.333106607,
+                        "go": -0.333106607,
+                        "hello": -0.970332265,
+                        "hi": -0.964695752,
+                        "howdi": -0.958806157,
+                        "what": -0.248092115,
+                        "is": -0.248092115,
+                        "your": -0.248092115,
+                        "name": -0.248092115,
+                        "resum": 11.337348938,
+                        "linkedin": -0.995613873,
+                        "github": -0.991959572,
+                        "email": -0.987958431,
+                        "e": -0.28762126,
+                        "mail": -0.990092635,
+                        "nonefeature": -0.979426205
+                      }
+                    },
+                    "questions.linkedin": {
+                      "bias": 1.00083893,
+                      "weights": {
+                        "goodby": -0.279435784,
+                        "for": -0.361304492,
+                        "now": -0.361304492,
+                        "bye": -0.388566971,
+                        "take": -0.306698203,
+                        "care": -0.306698203,
+                        "okay": -0.250536501,
+                        "see": -0.250536501,
+                        "you": -0.250536501,
+                        "later": -0.250536501,
+                        "i": -0.333950877,
+                        "must": -0.333950877,
+                        "go": -0.333950877,
+                        "hello": -0.975539744,
+                        "hi": -0.970159411,
+                        "howdi": -0.964519143,
+                        "what": -0.248697922,
+                        "is": -0.248697922,
+                        "your": -0.248697922,
+                        "name": -0.248697922,
+                        "resum": -0.957918882,
+                        "linkedin": 11.337218285,
+                        "github": -0.995414793,
+                        "email": -0.991707265,
+                        "e": -0.295873553,
+                        "mail": -0.99426496,
+                        "nonefeature": -0.983875096
+                      }
+                    },
+                    "questions.github": {
+                      "bias": 1.001048015,
+                      "weights": {
+                        "goodby": -0.279900193,
+                        "for": -0.365084708,
+                        "now": -0.365084708,
+                        "bye": -0.393307865,
+                        "take": -0.30812338,
+                        "care": -0.30812338,
+                        "okay": -0.252674073,
+                        "see": -0.252674073,
+                        "you": -0.252674073,
+                        "later": -0.252674073,
+                        "i": -0.336286157,
+                        "must": -0.336286157,
+                        "go": -0.336286157,
+                        "hello": -0.979839265,
+                        "hi": -0.974737227,
+                        "howdi": -0.96936816,
+                        "what": -0.249052972,
+                        "is": -0.249052972,
+                        "your": -0.249052972,
+                        "name": -0.249052972,
+                        "resum": -0.963103294,
+                        "linkedin": -0.957096517,
+                        "github": 11.337333679,
+                        "email": -0.994631827,
+                        "e": -0.305371374,
+                        "mail": -0.997678816,
+                        "nonefeature": -0.987547815
+                      }
+                    },
+                    "questions.email": {
+                      "bias": 1.967118502,
+                      "weights": {
+                        "goodby": -0.546463549,
+                        "for": -0.757196546,
+                        "now": -0.757196546,
+                        "bye": -0.820250332,
+                        "take": -0.609517455,
+                        "care": -0.609517455,
+                        "okay": -0.516706169,
+                        "see": -0.516706169,
+                        "you": -0.516706169,
+                        "later": -0.516706169,
+                        "i": -0.672735572,
+                        "must": -0.672735572,
+                        "go": -0.672735572,
+                        "hello": -1.930630326,
+                        "hi": -1.922728896,
+                        "howdi": -1.914334893,
+                        "what": -0.48906967,
+                        "is": -0.48906967,
+                        "your": -0.48906967,
+                        "name": -0.48906967,
+                        "resum": -1.904488206,
+                        "linkedin": -1.894981146,
+                        "github": -1.884935975,
+                        "email": 10.413805008,
+                        "e": 0.986338556,
+                        "mail": 9.949162483,
+                        "nonefeature": -1.942559242
+                      }
+                    },
+                    "None": {
+                      "bias": 0.997811571,
+                      "weights": {
+                        "goodby": -0.287430614,
+                        "for": -0.384409189,
+                        "now": -0.384409189,
+                        "bye": -0.415804684,
+                        "take": -0.318826079,
+                        "care": -0.318826079,
+                        "okay": -0.264677316,
+                        "see": -0.264677316,
+                        "you": -0.264677316,
+                        "later": -0.264677316,
+                        "i": -0.34983325,
+                        "must": -0.34983325,
+                        "go": -0.34983325,
+                        "hello": -0.988228381,
+                        "hi": -0.984033823,
+                        "howdi": -0.979552925,
+                        "what": -0.251378149,
+                        "is": -0.251378149,
+                        "your": -0.251378149,
+                        "name": -0.251378149,
+                        "resum": -0.974333405,
+                        "linkedin": -0.969202459,
+                        "github": -0.963740945,
+                        "email": -0.957871437,
+                        "e": -0.252667189,
+                        "mail": -0.958789706,
+                        "nonefeature": 11.33193779
+                      }
+                    }
+                  }
+                ],
+                "trainOpts": {
+                  "iterations": 20000,
+                  "errorThresh": 0.00005,
+                  "fixedError": false,
+                  "deltaErrorThresh": 0.000001,
+                  "learningRate": 0.7,
+                  "momentum": 0.5,
+                  "leakyReluAlpha": 0.08,
+                  "maxDecimals": 9,
+                  "log": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "extraSentences": [
+      [
+        "en",
+        "goodbye for now"
+      ],
+      [
+        "en",
+        "bye bye take care"
+      ],
+      [
+        "en",
+        "okay see you later"
+      ],
+      [
+        "en",
+        "bye for now"
+      ],
+      [
+        "en",
+        "i must go"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "howdy"
+      ],
+      [
+        "en",
+        "What's your name?"
+      ],
+      [
+        "en",
+        "resume"
+      ],
+      [
+        "en",
+        "Linkedin"
+      ],
+      [
+        "en",
+        "Github"
+      ],
+      [
+        "en",
+        "Email"
+      ],
+      [
+        "en",
+        "e-mail"
+      ],
+      [
+        "en",
+        "mail"
+      ]
+    ]
+  },
+  "nerManager": {
+    "settings": {},
+    "threshold": 0.8,
+    "builtins": [
+      "Number",
+      "Ordinal",
+      "Percentage",
+      "Age",
+      "Currency",
+      "Dimension",
+      "Temperature",
+      "DateTime",
+      "PhoneNumber",
+      "IpAddress",
+      "Boolean",
+      "Email",
+      "Hashtag",
+      "URL"
+    ],
+    "namedEntities": {}
+  },
+  "slotManager": {},
+  "responses": {
+    "en": {
+      "greetings.bye": [
+        {
+          "response": "Till next time"
+        },
+        {
+          "response": "see you soon!"
+        }
+      ],
+      "greetings.hello": [
+        {
+          "response": "Hey there!"
+        },
+        {
+          "response": "Greetings!"
+        }
+      ],
+      "questions.name": [
+        {
+          "response": "I am Younggyo Lee"
+        }
+      ],
+      "questions.resume": [
+        {
+          "response": "Ah, you want to see my resume? Here it is. https://docs.google.com/document/d/1YPAfDPnAIoo5AREdLj_x0C4TAA5RwysK_GYyLTFXH_o/edit?usp=sharing"
+        }
+      ],
+      "questions.linkedin": [
+        {
+          "response": "My Linkedin Profile ▶️ https://linkedin.com/in/younggyolee"
+        }
+      ],
+      "questions.github": [
+        {
+          "response": "My Github Profile ▶️ https://github.com/younggyolee"
+        }
+      ],
+      "questions.email": [
+        {
+          "response": "My inbox is always open! Don't hesitate to reach out to me at mailto:younglee.work@gmail.com, and I will make sure to respond."
+        }
+      ],
+      "None": [
+        {
+          "response": "Sorry, but I don't understand"
+        }
+      ]
+    }
+  },
+  "actions": {},
+  "utteranceDict": {
+    "?": "help"
+  }
+}
