@@ -30,6 +30,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api', api);
 
+app.use('/', (req, res) => {
+  res.status(200).json({
+    result: 'ok'
+  });
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
