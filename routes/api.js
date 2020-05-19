@@ -35,7 +35,6 @@ router.post('/message', async (req, res, next) => {
   })();
 
   const classification = response.classifications[0].label;
-  console.log('classification', response.classifications[0].label);
 
   res.status(200).json({
     author: 'bot',
