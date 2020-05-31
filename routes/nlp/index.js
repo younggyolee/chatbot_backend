@@ -40,10 +40,14 @@ manager.addAnswer('en', 'questions.projects', 'Get It Done Timer (iOS App) : htt
 manager.addAnswer('en', 'questions.projects', 'Sparkling Joys : https://www.sparklingjoys.com');
 manager.addAnswer('en', 'questions.projects', 'This is also my project - You are also chatting with a bot, not the real Younggyo. He is too busy now...');
 
-manager.addDocument('en', 'Work Experiences', 'questions.works');
-manager.addAnswer('en', 'questions.works', 'I worked at Farfetch as a performance marketing executive.');
-manager.addAnswer('en', 'questions.works', 'I also have a work experience in the mobile gaming industry as a game designer at Playdog Soft, a 2015 Facebook Games Of The Year winner.');
-manager.addAnswer('en', 'questions.works', 'I am currently working as a freelancer data engineer.');
+manager.addDocument('en', 'Work experiences', 'questions.works1');
+manager.addAnswer('en', 'questions.works1', 'I worked at Farfetch as a performance marketing executive.');
+
+manager.addDocument('en', 'More work experiences', 'questions.works2')
+manager.addAnswer('en', 'questions.works2', 'I am currently working as a freelancer data engineer.');
+
+manager.addDocument('en', 'Any other work that you did?', 'questions.works3');
+manager.addAnswer('en', 'questions.works3', 'I also have a work experience in the mobile gaming industry as a game designer at Playdog Soft, a 2015 Facebook Games Of The Year winner.');
 
 manager.addDocument('en', 'Facebook', 'questions.facebook');
 manager.addAnswer('en', 'questions.facebook', 'Meet me at Facebook https://facebook.com/younggyolee.fb');

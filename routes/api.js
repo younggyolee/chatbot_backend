@@ -11,6 +11,14 @@ function getChoices(classification) {
         'Github',
         'Resume',
       ];
+    case 'questions.works1':
+      return [
+        'More work experiences'
+      ];
+    case 'questions.works2':
+      return [
+        'Any other work that you did?'
+      ];
     case 'questions.linkedin':
       return [
         'Facebook',
@@ -19,6 +27,7 @@ function getChoices(classification) {
     default:
       return [
         'How do I pronounce your name?',
+        'E-mail',
         'Projects',
         'Work Experiences',
         'Linkedin',
