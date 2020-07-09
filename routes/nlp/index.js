@@ -30,7 +30,7 @@ manager.addAnswer('en', 'questions.github', 'My Github Profile ▶️ https://gi
 manager.addDocument('en', 'Email', 'questions.email');
 manager.addDocument('en', 'e-mail', 'questions.email');
 manager.addDocument('en', 'mail', 'questions.email');
-manager.addAnswer('en', 'questions.email', 'My inbox is always open! Don\'t hesitate to reach out to me at mailto:younglee.work@gmail.com, and I will make sure to respond.');
+manager.addAnswer('en', 'questions.email', 'My inbox is always open! Don\'t hesitate to reach out to me via younglee.work@gmail.com, and I will make sure to respond.');
 
 manager.addDocument('en', 'How do I pronounce your first name?', 'questions.pronunciation');
 manager.addAnswer('en', 'questions.pronunciation', 'This will be added soon, thanks for your patience.');
