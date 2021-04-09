@@ -7,6 +7,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var api = require('./routes/api');
+var getItDoneTimerRouter = require('./routes/getItDoneTimer');
 
 var app = express();
 
@@ -27,6 +28,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/get_it_done_timer', getItDoneTimerRouter);
 
 app.use('/api', api);
 
